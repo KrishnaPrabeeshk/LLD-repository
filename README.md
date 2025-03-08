@@ -1,6 +1,6 @@
 # LLD-repository
 <p align="center">
-  <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.khanwaseem.com%2Fblog%2Flow-level-design%2Fwhat-is-low-level-design&psig=AOvVaw0xmSUZc01C13Wr_J6jCEiS&ust=1741482951218000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCND4n-un-YsDFQAAAAAdAAAAABAE" width="350" height="200">
+  <img src="images/2143976.webp" width="350" height="200">
 </p>
 This repo contains everything that I used and did for learning Low Level Design
 
