@@ -1,4 +1,4 @@
-## Bridge Design Pattern
+# Bridge Design Pattern
 
 The **Bridge Design Pattern** is used to separate the **abstraction** (the interface) from its **implementation**, allowing both to evolve **independently**. This ensures that changes or extensions in one do not affect the other.
 
