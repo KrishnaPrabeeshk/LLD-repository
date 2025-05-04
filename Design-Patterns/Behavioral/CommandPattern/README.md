@@ -31,21 +31,6 @@ So instead of directly calling device methods, I wrap every action inside a **co
 
 - 🔄 **Undo/redo systems** – Every action can be reversed using its command’s `undo()` method
 
-
-## Implementation 🛠️
-
-The `command_pattern.py` file shows how I set up commands for devices like lights and fans. What’s cool is I also implemented **undo** — which is honestly where this pattern really shines.
-
-### Key parts:
-
-* `Command` interface → defines `execute()` and `undo()`
-* `LightOnCommand`, `FanOffCommand`, etc. → concrete command classes
-* `Light`, `Fan` → actual devices that receive commands
-* `RemoteControl` → the invoker that triggers commands and stores them in a history stack
-* Client code sets it all up and calls the commands
-
----
-
 ## What the system looks like: Before vs After 🧵
 
 ### ❌ Without Command Pattern:
@@ -89,24 +74,7 @@ Here’s how I think about it:
 | Undo support  | ✅ Built in if you add `undo()`                       | ❌ Not part of its goal                                |
 | Flexibility   | High — super dynamic                                 | Moderate — fixed interface                            |
 
-### TL;DR:
 
-* **Command** is like a programmable **remote** where every button is a plug-and-play command.
-* **Facade** is like a **hotel concierge** — you just tell it "book me a ride," and it does 5 things behind the scenes.
+## Implementation 🛠️
 
----
-
-## Summary 🧠
-
-| Feature             | Without Command Pattern | With Command Pattern         |
-| ------------------- | ----------------------- | ---------------------------- |
-| Coupling            | Tight                   | Loose                        |
-| Adding new behavior | Have to modify remote   | Just add a new command class |
-| Undo/Redo           | Hard to bolt on         | Built-in with history stack  |
-| Logging/Scheduling  | Manual work             | Clean and native             |
-| Flexibility         | Low                     | High                         |
-
----
-
-Command Pattern just makes systems so much more **flexible**, **clean**, and **future-proof**.
-You can plug in new actions like Lego bricks, and once you throw in `undo()` — it gets *really* powerful.
+The `smarthomeremotecontrol.py` file shows how I set up commands for devices like lights and fans. I also implemented **undo** — which is where this pattern really helps.
