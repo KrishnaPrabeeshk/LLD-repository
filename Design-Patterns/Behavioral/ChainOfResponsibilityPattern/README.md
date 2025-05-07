@@ -25,7 +25,7 @@ The **Chain of Responsibility Pattern** is a behavioral design pattern that lets
 
 ## Implementation 🛠️
 
-The `support_chain.py` file implements a **tech support escalation system**. Based on ticket priority, requests are handled by:
+The `TechSupportTicketEscalationSystem.py` file implements a **tech support escalation system**. Based on ticket priority, requests are handled by:
 
 * `BasicSupportHandler` for "low" priority
 * `AdvancedSupportHandler` for "medium" priority
